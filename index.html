@@ -1433,13 +1433,13 @@ function generateLinks() {
   if (configType.toLowerCase() === "shadowsocks") {
     // Buat URL Shadowsocks
     const configType = Math.random().toString(36).substring(2, 10); // Generate random string
-    link1 = `https://cf.novantunnel.life/SS?sub1=${country}&count=${limit}&wildcard=${bug}`;
+    link1 = `https://cf.cloudfeler.xyz/SS?sub1=${country}&count=${limit}&wildcard=${bug}`;
   } else {
     // Buat URL default
     if (!bug) {
       wildcard = "false"; // Atur wildcard menjadi false jika bug tidak diisi
     }
-    link1 = `https://cf.novantunnel.life/vpn/${app}?type=${configType}&bug=${bug}&tls=${tls}&wildcard=${wildcard}&limit=${limit}&country=${country}`;
+    link1 = `https://cf.cloudfeler.xyz/vpn/${app}?type=${configType}&bug=${bug}&tls=${tls}&wildcard=${wildcard}&limit=${limit}&country=${country}`;
   }
 
   // Tampilkan link pada input box
